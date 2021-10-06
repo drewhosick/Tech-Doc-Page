@@ -1,0 +1,73 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning HTML</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main id="main-doc" class="container">
+        <div class="page-split1">
+            <nav id="navbar" class="navbar">
+                <h1>A look at some HTML Elements</h1>
+                <a class="nav-link" href="#Paragraphs">Paragraphs</a>
+                <a class="nav-link" href="#Headlines">Headlines</a>
+                <a class="nav-link" href="#Breaklines">Breaklines</a>
+                <a class="nav-link" href="#Styles">Styles</a>
+                <a class="nav-link" href="#Javascript">Javascript</a>
+            </nav>
+        </div>
+        <div class="page-split2">
+            <section class="top-section" id="Overview">
+                <header class="overview">
+                    <h2>Overview</h2>
+                    <p>Today we are going to look at some tags in HTML.  You can use the navbar above to go to them or scroll down.</p>
+                </header>
+            </section>
+            <section class="main-section" id="Paragraphs">
+                <header class="paragraphs">
+                    <h2>Paragraphs</h2>
+                    <p>The Paragraph is part of HTML.  The tag looks like this &lt;p&gt;.</p>
+                    <p>It's the simplest form of HTML and is used to write text in a paragraph for the reader or user.</p>
+                    <code>&lt;p&gt;This is a code example&lt;/p&gt;</code>
+                </header>
+            </section>
+            <section class="main-section" id="Headlines">
+                <header class="headlines">
+                    <h2>Headlines</h2>
+                    <p>Headlines are also important and denote what things below them will be about.  For example, you might use a headline as a title to a page or to denote a section below it that will explain to the user, more about what you are talking about in your headline by using a paragraph.</p>
+                    <p>Headlines can be created in HTML by using &lt;hx&gt; with x being replaced with 1 through 6 depending on the importance of the headline.  There should only be one headline with an &lt;h1&gt;</p>
+                    <code>&lt;h3&gt;This is a code example&lt;/h3&gt;</code>
+                </header>
+            </section>
+            <section class="main-section" id="Breaklines">
+                <header class="breakline">
+                    <h2>Breaklines</h2>
+                    <p>Breaklines are used on elements that don't create a new line after themselves.  While the end of a paragraph like so &lt;/p&gt; will cause the browser to render a new line for the next element.  Other elements are known as inline elements like links and images and you need to send a new line command or use CSS to make sure content after it will be on a new line.</p>
+                    <p>They are represented with &lt;br&gt;.  It's important to remember that you do not need &lt;/br&gt; for this tag.</p>
+                    <code>This is a code example&lt;br&gt;<br>This was in the same code snippet.</code>
+                </header>
+            </section>
+            <section class="main-section" id="Styles">
+                <header class="styles">
+                    <h2>Styles</h2>
+                    <p>Styles are what give lines different looks.  They can be applied inside tags like &lt;p&gt;, &lt;h1&gt; or most all other elements.  Or they can be applied to items through a CSS sheet or Cascading Style Sheet.</p>
+                    <p>When applying styles inline, you must use style=&quot;style goes here&quot;.  You can also apply them with &lt;style&gt; and &lt;/style&gt; tags in the head of the document.</p>
+                    <p>Styles would look something like this line here:</p>
+                    <code>style=&quot;font-size:16px;&quot;</code>
+                </header>
+            </section>
+            <section class="main-section" id="Javascript">
+                <header class="javascript">
+                    <h2>Javascript</h2>
+                    <p>Javascript is what makes a page come to life.  It allows the programmer to give the user more than just a visual experience.  You can use coding to do things like change items on the screen based on input from the user in an input box.  Or it could be something as simple as doing math behind the scenes.</p>
+                    <p>Javascript is included using the &lt;script&gt; tags and by either writing that scripting inline or by including it on a .js file through a link in the script tag to the file.</p>
+                    <p>Code could look something like this:</p>
+                    <code>const main-section = document.queryselector(.main-section);</code>
+                </header>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
